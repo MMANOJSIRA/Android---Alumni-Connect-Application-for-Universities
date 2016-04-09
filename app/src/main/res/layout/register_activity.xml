@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/background_resource_layout_file">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:hint="User Name"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/Dept_spinner"
+        android:background="@drawable/edittext_custom"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pass"
+        android:hint="password"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/username"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:inputType="textPassword"
+        android:background="@drawable/edittext_custom"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/conpass"
+        android:hint="confirm password"
+        android:inputType="textPassword"
+        android:background="@drawable/edittext_custom"
+        android:layout_below="@+id/pass"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/reg"
+        android:textColor="#000000"
+        android:background="@drawable/edittext_custom"
+        android:layout_below="@+id/Dept_spinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/Phone"
+        android:layout_marginTop="36dp"
+        android:hint="Enter phone number"
+        android:background="@drawable/edittext_custom"
+        android:layout_below="@+id/conpass"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fbreg"
+        android:text="www.facebook.com/"
+        android:background="@drawable/edittext_custom"
+        android:layout_below="@+id/Phone"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/R_email"
+        android:hint="Enter Email Id"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/edittext_custom"
+        android:layout_below="@+id/fbreg"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Dept_spinner"
+        android:spinnerMode="dialog"
+        android:background="@drawable/edittext_custom"
+        android:dropDownSelector="#5786c7"
+        android:dropDownWidth="match_parent"
+        android:textAlignment="center"
+        android:layout_below="@+id/R_email"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="43dp"
+        android:layout_toStartOf="@+id/reg" />
+
+    <Spinner
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Yspinner"
+        android:layout_alignTop="@+id/Dept_spinner"
+        android:spinnerMode="dialog"
+        android:background="@drawable/edittext_custom"
+        android:layout_toEndOf="@+id/reg" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/RollOn"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/pass"
+        android:hint="Roll Number"
+        android:inputType="number"
+        android:background="@drawable/edittext_custom"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/Yspinner" />
+
+</RelativeLayout>

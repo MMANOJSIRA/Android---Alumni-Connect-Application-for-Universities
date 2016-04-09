@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dept_spin"
+        android:spinnerMode="dialog"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/textView9"
+        android:background="@drawable/edittext_custom"
+        />
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Yspin"
+        android:spinnerMode="dialog"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/edittext_custom"
+        android:layout_below="@+id/dept_spin"
+        android:layout_toEndOf="@+id/textView9" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:id="@+id/filteredlistview"
+        android:choiceMode="singleChoice"
+        android:background="@drawable/edittext_custom"
+        android:layout_below="@+id/filterbutton"
+        android:layout_alignEnd="@+id/Yspin"
+        android:layout_marginTop="66dp"
+        android:layout_alignParentBottom="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="SEARCH ALUMINI"
+        android:id="@+id/filterbutton"
+        android:textColor="#000000"
+        android:background="@drawable/edittext_custom"
+        android:layout_below="@+id/Yspin"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=" Department"
+        android:id="@+id/textView8"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/Yspin"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Passout Year"
+        android:id="@+id/textView9"
+        android:layout_alignTop="@+id/Yspin"
+        android:layout_alignEnd="@+id/textView8"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Filtered Results"
+        android:id="@+id/textView4"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/filterbutton"
+        android:layout_alignStart="@+id/Yspin" />
+</RelativeLayout>

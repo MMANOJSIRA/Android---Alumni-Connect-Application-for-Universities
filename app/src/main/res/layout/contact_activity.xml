@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/edittext_custom"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Name"
+        android:id="@+id/contactName"
+        android:textSize="50sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:text="CONNECT VIA FB"
+        android:background="#1864d6"
+        android:fontFamily="@string/abc_searchview_description_query"
+        android:id="@+id/fbButton"
+        android:textSize="40sp"
+        android:textColor="#ffffff"
+        android:layout_above="@+id/callButton"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:text="MAKE A CALL"
+        android:background="#2bfa0f"
+        android:fontFamily="@string/abc_searchview_description_query"
+        android:id="@+id/callButton"
+        android:textSize="40sp"
+        android:textColor="#ffffff"
+        android:layout_above="@+id/smsButton"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:text="SEND AN SMS"
+        android:background="#fa5d0f"
+        android:fontFamily="@string/abc_searchview_description_query"
+        android:id="@+id/smsButton"
+        android:textSize="40sp"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Email"
+        android:id="@+id/EmailOutput"
+        android:layout_below="@+id/contactName"
+        android:layout_marginTop="33dp"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Department"
+        android:id="@+id/DeptOutput"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/EmailOutput"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Year"
+        android:id="@+id/YearOutput"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/DeptOutput"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
